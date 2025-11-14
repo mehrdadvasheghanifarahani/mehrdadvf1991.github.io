@@ -23,3 +23,15 @@ author:
   avatar: "/assets/images/profile.jpg"
   bio: "Research Fellow in Chemical Engineering – Porous Media, LBM, Energy Storage."
   location: "Manchester, UK"
+
+# ----- Navigation Menu -----
+nav:
+  main:
+    - title: "About"
+      url: /about/
+    - title: "Research"
+      url: /research/
+    - title: "Publications"
+      url: /publications/
+    - title: "Contact"
+      url: /contact/
