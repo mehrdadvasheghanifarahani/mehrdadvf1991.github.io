@@ -4,47 +4,44 @@ name: "Mehrdad Vasheghani Farahani"
 description: "Researcher in Porous Media, Transport Phenomena, and Energy Systems"
 url: "https://mehrdadvasheghanifarahani.github.io"
 
-# Enable site-wide header (fixes missing menu on homepage)
-header:
-  overlay: false
-  show_overlay: false
-  sticky: true
+# Remote theme
+remote_theme: mmistakes/minimal-mistakes@4.24.0
 
-remote_theme: "mmistakes/minimal-mistakes@4.24.0"
-
-# Enable navigation
-defaults:
-  - scope:
-      path: ""
-      type: pages
-    values:
-      layout: single
-      header:
-        nav: main
-
+# Plugins
 plugins:
   - jekyll-include-cache
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-remote-theme
 
+# Markdown
 markdown: kramdown
+
+# Pagination
 paginate: 10
 
+# Author
 author:
   name: "Mehrdad Vasheghani Farahani"
   avatar: "/assets/images/profile.jpg"
   bio: "Research Fellow in Chemical Engineering – Porous Media, LBM, Energy Storage."
   location: "Manchester, UK"
 
+# Defaults for pages
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+
 # Navigation menu
-nav:
-  main:
-    - title: "About"
-      url: /about/
-    - title: "Research"
-      url: /research/
-    - title: "Publications"
-      url: /publications/
-    - title: "Contact"
-      url: /contact/
+main:
+  - title: "About"
+    url: /about/
+  - title: "Research"
+    url: /research/
+  - title: "Publications"
+    url: /publications/
+  - title: "Contact"
+    url: /contact/
