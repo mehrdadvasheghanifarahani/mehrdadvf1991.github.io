@@ -4,7 +4,23 @@ name: "Mehrdad Vasheghani Farahani"
 description: "Researcher in Porous Media, Transport Phenomena, and Energy Systems"
 url: "https://mehrdadvasheghanifarahani.github.io"
 
+# Enable site-wide header (fixes missing menu on homepage)
+header:
+  overlay: false
+  show_overlay: false
+  sticky: true
+
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+
+# Enable navigation
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      header:
+        nav: main
 
 plugins:
   - jekyll-include-cache
@@ -20,13 +36,6 @@ author:
   avatar: "/assets/images/profile.jpg"
   bio: "Research Fellow in Chemical Engineering – Porous Media, LBM, Energy Storage."
   location: "Manchester, UK"
-
-defaults:
-  - scope:
-      path: ""
-    values:
-      header:
-        nav: main
 
 # Navigation menu
 nav:
